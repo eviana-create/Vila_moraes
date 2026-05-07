@@ -6,13 +6,11 @@ import ProjetoCrianca from "./pages/projetoCrianca";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/reunioes" element={<Reunioes/>} />
-        <Route path="/projeto-crianca" element={<ProjetoCrianca />}></Route>
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="reunioes" element={<Reunioes />} />
+      <Route path="projeto-crianca" element={<ProjetoCrianca />} />
+    </Routes>
   );
   
 }
