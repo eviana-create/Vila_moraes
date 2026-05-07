@@ -1,0 +1,20 @@
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/home";
+import Reunioes from "./pages/Reunioes";
+import ProjetoCrianca from "./pages/projetoCrianca";
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/reunioes" element={<Reunioes/>} />
+        <Route path="/projeto-crianca" element={<ProjetoCrianca />}></Route>
+      </Routes>
+    </BrowserRouter>
+  );
+  
+}
+
+export default App;
