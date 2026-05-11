@@ -66,8 +66,8 @@ function Home() {
                     <p style={{ fontSize: "14px", color: "#ccc"}}>
                         o Projeto Criança por um Dia começou com o sonho de um grupo de amigos
                         que cresceram juntos na comunidade desde dos anos 90.
-                        Um sonho que conseguiram concretizar com a união dessa amizade somado apoio de outros amigos
-                        de fora da comunidade(de outras quebradas) e parcerias que contribuiram para tornar essa 
+                        Um sonho que conseguiram concretizar com a união dessa amizade somado ao apoio de outros amigos
+                        de fora da comunidade(de outros bairros) e parcerias que contribuiram para tornar essa 
                         iniciativa realidade.
                     </p>
 
