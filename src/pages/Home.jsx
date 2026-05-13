@@ -155,7 +155,7 @@ function Home() {
 
             {/*BOTÃO DE APOIO*/}
             <button
-            onClick={() => window.open("http://www.youtube.com")}
+            onClick={() => window.open("http://bigwb.co/s/CB1Cm")}
             style={{
                 marginTop: "30px",
                 padding: "25px",

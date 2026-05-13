@@ -16,7 +16,7 @@ e força coletiva.`*/
 
 export const avisos = [
     "Reunião geral dia  ás  horas",
-    "Mutirão de limpeza neste sabado",
+    "Mutirão de limpeza neste dia e hora",
     "Novo Projeto de urbanização em andamento",
 ];
 
