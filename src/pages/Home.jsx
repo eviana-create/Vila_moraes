@@ -155,7 +155,7 @@ function Home() {
 
             {/*BOTÃO DE APOIO*/}
             <button
-            onClick={() => window.open("http://bigwb.co/s/CB1Cm")}
+            onClick={() => window.open("http://k.kwai.com/w/v3xddej7")}
             style={{
                 marginTop: "30px",
                 padding: "25px",
