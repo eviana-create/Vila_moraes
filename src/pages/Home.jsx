@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import Card from "../components/Card";
 import Container from "../components/Container";
 import { historia, avisos } from "../data/conteudo";
+import { Link } from "react-router-dom";
 
 function Home() {
     return (
@@ -31,6 +32,57 @@ function Home() {
                 </Card>                
             </section>
 
+             <div
+            style={{
+                background: "#1f1f1f",
+                padding: "30px",
+                borderRadius: "20px",
+                marginTop: "30px",
+                textAlign: "center"
+            }}
+            >
+            <h2
+                style={{
+                fontSize: "22px",
+                marginBottom: "15px",
+                color: "#4caf50"
+                }}
+            >
+                Associação da Vila Moraes
+            </h2>
+
+            <p
+                style={{
+                color: "#ccc",
+                fontSize: "15px",
+                lineHeight: "1.8",
+                maxWidth: "700px",
+                margin: "0 auto 25px auto"
+                }}
+            >
+                Descubra os projetos sociais, ações comunitárias,
+                lideranças e iniciativas que ajudam a transformar
+                vidas e fortalecer a união da nossa comunidade.
+            </p>
+
+            <Link
+                to="/associacao"
+                style={{
+                display: "inline-block",
+                background: "#4caf50",
+                color: "#fff",
+                padding: "15px 35px",
+                borderRadius: "12px",
+                textDecoration: "none",
+                fontSize: "18px",
+                fontWeight: "bold",
+                transition: "0.3s"
+                }}
+            >
+                Conheça a Associação →
+            </Link>
+            </div>
+
             <section id="atividade" style={{ scrollMarginTop: "80px"}}>
                 <Card>
                     <h2>Projetos e Ações Sociais</h2>
@@ -38,8 +90,7 @@ function Home() {
                 </Card>
             </section>
 
-            
-            {/* CARD PROJETO CRIANÇA */}
+           {/* CARD PROJETO CRIANÇA */}
                 <div style={{
                     display: "flex",
                     gap: "15px",
@@ -146,16 +197,10 @@ function Home() {
                     <p>Próxima reunião será dia /  / ás  :  </p>
                 </Card>
             </section>
-            <section id="atividade" style={{ scrollMarginTop: "80px"}}>
-                <Card>
-                    <h2>Projetos e Ações Sociais</h2>
-                    <p>Iniciativas de projetos da comunidade </p>
-                </Card>
-            </section>
-
+    
             {/*BOTÃO DE APOIO*/}
             <button
-            onClick={() => window.open("http://k.kwai.com/w/v3xddej7")}
+            onClick={() => window.open("http://www.youtube.com")}
             style={{
                 marginTop: "30px",
                 padding: "25px",
