@@ -13,7 +13,7 @@ function Associacao() {
       <h1
         style={{
           textAlign: "center",
-          fontSize: "40px",
+          fontSize: "20px",
           marginBottom: "40px"
         }}
       >
@@ -30,7 +30,7 @@ function Associacao() {
         }}
       >
         <h2 style={{ color: "#4caf50", marginBottom: "15px" }}>
-          Nossa História
+          Sobre a Associação
         </h2>
 
         <p style={{ lineHeight: "1.8", color: "#ccc" }}>
