@@ -94,8 +94,8 @@ function Associacao() {
 
         <p style={{ lineHeight: "1.8", color: "#ccc" }}>
           Um dos destaques é o incentivo à capacitação de jovens através de
-          oportunidades e cursos ligados à Scania e outras iniciativas que ajudam
-          a preparar moradores para o mercado de trabalho e para um futuro melhor.
+          oportunidades e cursos ligados à Scania, Volkswagem e outras iniciativas que ajudam
+          a preparar os Jovens para o mercado de trabalho e para um futuro melhor.
         </p>
       </section>
 
