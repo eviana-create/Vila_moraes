@@ -113,9 +113,9 @@ function Home() {
                 />
 
                 <div style={{ flex: 1}}>
-                    <h3>Projeto Criança por um Dia</h3>
+                    <h3>Projeto Um Dia de Criança</h3>
                     <p style={{ fontSize: "14px", color: "#ccc"}}>
-                        o Projeto Criança por um Dia começou com o sonho de um grupo de amigos
+                        o Projeto Um Dia de Criança começou com o sonho de um grupo de amigos
                         que cresceram juntos na comunidade desde dos anos 90.
                         Um sonho que conseguiram concretizar com a união dessa amizade somado ao apoio de outros amigos
                         de fora da comunidade(de outros bairros) e parcerias que contribuiram para tornar essa 
@@ -173,6 +173,102 @@ function Home() {
                     </div>
 
                     </div> 
+
+                    <div
+            style={{
+                display: "flex",
+                gap: "20px",
+                background: "#1f1f1f",
+                padding: "20px",
+                borderRadius: "18px",
+                marginTop: "30px",
+                alignItems: "center",
+                flexWrap: "wrap",
+                boxShadow: "0 4px 20px rgba(0,0,0,0.3)"
+            }}
+            >
+            {/* IMAGEM */}
+            <img
+                src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?q=80&w=1200&auto=format&fit=crop"
+                alt="Horta Comunitária"
+                style={{
+                width: "280px",
+                height: "220px",
+                objectFit: "cover",
+                borderRadius: "15px",
+                flexShrink: 0
+                }}
+            />
+
+            {/* TEXO */}
+            <div style={{ flex: 1 }}>
+                <h2
+                style={{
+                    color: "#4caf50",
+                    fontSize: "30px",
+                    marginBottom: "15px"
+                }}
+                >
+                🌱 Horta Comunitária
+                </h2>
+
+                <p
+                style={{
+                    color: "#ccc",
+                    lineHeight: "1.8",
+                    fontSize: "16px"
+                }}
+                >
+                A horta comunitária da Vila Moraes representa muito mais do que
+                o cultivo de alimentos.
+                </p>
+
+                <br />
+
+                <p
+                style={{
+                    color: "#ccc",
+                    lineHeight: "1.8",
+                    fontSize: "16px"
+                }}
+                >
+                Ela simboliza união, cuidado com a comunidade, sustentabilidade
+                e o compromisso coletivo em construir um ambiente melhor para todos.
+                </p>
+
+                <br />
+
+                <p
+                style={{
+                    color: "#ccc",
+                    lineHeight: "1.8",
+                    fontSize: "16px"
+                }}
+                >
+                O espaço reúne moradores, voluntários e famílias em uma iniciativa
+                que incentiva a alimentação saudável, o trabalho em equipe e o
+                fortalecimento dos laços comunitários.
+                </p>
+
+                {/* BOTÃO */}
+                <button
+                style={{
+                    marginTop: "20px",
+                    background: "#4caf50",
+                    color: "#fff",
+                    border: "none",
+                    padding: "14px 28px",
+                    borderRadius: "10px",
+                    cursor: "pointer",
+                    fontSize: "16px",
+                    fontWeight: "bold",
+                    transition: "0.3s"
+                }}
+                >
+                Conheça o Projeto →
+                </button>
+            </div>
+            </div>
 
             {/*AVISOS*/}
             <section id="avisos" style={{ scrollMarginTop: "80px"}}>
