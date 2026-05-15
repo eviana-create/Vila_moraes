@@ -157,7 +157,7 @@ function Home() {
                         <h3>Projeto Páscoa Solidaria</h3>
 
                         <p style={{ fontSize: "14px", color: "#ccc"}}>
-                            Assim como o projeto Criança por um Dia, a ação de Páscoa leva alegria 
+                            Assim como o projeto Um Dia de Criança, a ação de Páscoa leva alegria 
                             para as crianças da comunidade com distribuição de ovos de chocolate,
                             promovendo momentos especiais e fortalecendo os laços entre moradores.
                         </p>
