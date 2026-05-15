@@ -43,7 +43,7 @@ function Associacao() {
 
         <p style={{ lineHeight: "1.8", color: "#ccc" }}>
           Durante muitos anos, a associação contou com a liderança e dedicação
-          do antigo presidente Tarcísio, que teve papel importante na construção
+          do antigo presidente Tarcísio Leonardo, que teve papel importante na construção
           de ações e iniciativas voltadas ao bem-estar dos moradores e
           fortalecimento da comunidade.
         </p>
