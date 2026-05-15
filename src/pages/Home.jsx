@@ -162,7 +162,7 @@ function Home() {
                             promovendo momentos especiais e fortalecendo os laços entre moradores.
                         </p>
 
-                    <a href="/projeto0páscoa" style={{
+                    <a href="/projetopáscoa" style={{
                         display: "inline-block",
                         marginTop: "10px",
                         color: "#ff9800",
@@ -251,39 +251,80 @@ function Home() {
                 </p>
 
                 {/* BOTÃO */}
-                <button
-                style={{
-                    marginTop: "20px",
-                    background: "#4caf50",
-                    color: "#fff",
-                    border: "none",
-                    padding: "14px 28px",
-                    borderRadius: "10px",
-                    cursor: "pointer",
-                    fontSize: "16px",
-                    fontWeight: "bold",
-                    transition: "0.3s"
-                }}
-                >
-                Conheça o Projeto →
-                </button>
+                <Link
+                    to="/horta"
+                    style={{
+                        display: "inline-block",
+                        marginTop: "20px",
+                        background: "#4caf50",
+                        color: "#fff",
+                        padding: "14px 28px",
+                        borderRadius: "10px",
+                        textDecoration: "none",
+                        fontWeight: "bold"
+                    }}
+                    >
+                    Conheça o Projeto →
+                </Link>
             </div>
             </div>
 
             {/*AVISOS*/}
-            <section id="avisos" style={{ scrollMarginTop: "80px"}}>
-               <Card>
-                 <h2>Avisos</h2>
-                 <p style={{ color: "#ccc"}}>
-                    Em breve novos avisos da comunidade serão publicados aqui.
-                 </p>
-                <ul>
-                    {avisos.map((aviso, i) =>(
-                        <li key={i}>{aviso}</li>
-                    ))}
-                </ul>
-               </Card>
-            </section>
+           <section id="avisos" style={{ scrollMarginTop: "80px" }}>
+  <Card>
+    <h2>📢 Avisos da Comunidade</h2>
+
+    <p style={{ color: "#ccc", marginBottom: "20px" }}>
+      Fique por dentro das melhorias, ações sociais,
+      projetos e comunicados importantes da Vila Moraes.
+    </p>
+
+    {/* AVISO EM DESTAQUE */}
+    <div
+      style={{
+        background: "#1f1f1f",
+        padding: "20px",
+        borderRadius: "15px",
+        marginBottom: "20px",
+        borderLeft: "5px solid #2196f3"
+      }}
+    >
+      <h3 style={{ marginBottom: "10px" }}>
+        💧 Regularização de Água
+      </h3>
+
+      <p style={{ color: "#ccc", lineHeight: "1.7" }}>
+        A SABESP está oferecendo oportunidade para regularização
+        de débitos, instalação de caixas d’água e novos registros
+        para moradores da comunidade.
+      </p>
+
+      {/* BOTÃO */}
+      <a
+        href="/avisos"
+        style={{
+          display: "inline-block",
+          marginTop: "15px",
+          background: "#2196f3",
+          color: "#fff",
+          padding: "12px 22px",
+          borderRadius: "10px",
+          textDecoration: "none",
+          fontWeight: "bold"
+        }}
+      >
+        Saiba mais →
+      </a>
+    </div>
+
+    {/* LISTA DE AVISOS */}
+    <ul>
+      {avisos.map((aviso, i) => (
+        <li key={i}>{aviso}</li>
+      ))}
+    </ul>
+  </Card>
+</section>
 
             {/* REUNIÕES */}
 
