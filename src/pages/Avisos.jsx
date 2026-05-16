@@ -11,7 +11,7 @@ function Avisos() {
 
     {
       titulo: "🎓 Cursos para Jovens",
-      data: "08 de Agosto de 2026",
+      data: "Em Andamento",
       descricao:
         "Novas oportunidades de cursos profissionalizantes e ações voltadas à capacitação de jovens da comunidade.",
       imagem:
@@ -20,7 +20,7 @@ function Avisos() {
 
     {
       titulo: "❤️ Ação Social",
-      data: "05 de Agosto de 2026",
+      data: "Em Breve",
       descricao:
         "Ajude o Projeto Criança por um dia com doações de brinquedos, roupas, ajuda financeira ou voluntariado.",
       imagem:

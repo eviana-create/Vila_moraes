@@ -300,21 +300,21 @@ function Home() {
       </p>
 
       {/* BOTÃO */}
-      <a
-        href="/avisos"
+      <Link
+        to="/avisos"
         style={{
-          display: "inline-block",
-          marginTop: "15px",
-          background: "#2196f3",
-          color: "#fff",
-          padding: "12px 22px",
-          borderRadius: "10px",
-          textDecoration: "none",
-          fontWeight: "bold"
+            display: "inline-block",
+            marginTop: "15px",
+            background: "#2196f3",
+            color: "#fff",
+            padding: "12px 22px",
+            borderRadius: "10px",
+            textDecoration: "none",
+            fontWeight: "bold"
         }}
-      >
+        >
         Saiba mais →
-      </a>
+        </Link>
     </div>
 
     {/* LISTA DE AVISOS */}
