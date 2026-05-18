@@ -1,3 +1,8 @@
+import { Link } from "react-router-dom";
+
+/* IMPORT DA IMAGEM LOCAL */
+import sabespImg from "../assets/sabesp.png";
+
 function Avisos() {
   const avisos = [
     {
@@ -5,8 +10,7 @@ function Avisos() {
       data: "Urgente",
       descricao:
         "Projeto em parceria com a SABESP para regularização de débitos, instalação de caixas d’água e novos registros para moradores da comunidade. Procurar a Presidente Monica Melchiades na Associação, Rua Nova Jesusalém, Nº ",
-      imagem:
-      "https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=1200&auto=format&fit=crop"
+      imagem: sabespImg
     },
 
     {
@@ -22,7 +26,7 @@ function Avisos() {
       titulo: "❤️ Ação Social",
       data: "Em Breve",
       descricao:
-        "Ajude o Projeto Criança por um dia com doações de brinquedos, roupas, ajuda financeira ou voluntariado.",
+        "Ajude o Projeto Criança por um Dia com doações de brinquedos, roupas, ajuda financeira ou voluntariado.",
       imagem:
         "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=1200&auto=format&fit=crop"
     },
@@ -67,8 +71,9 @@ function Avisos() {
             lineHeight: "1.8"
           }}
         >
-          Fique por dentro das ações, melhorias, projetos sociais,
-          eventos e comunicados importantes da comunidade Vila Moraes.
+          Fique por dentro das ações, melhorias,
+          projetos sociais, eventos e comunicados
+          importantes da comunidade Vila Moraes.
         </p>
       </div>
 
@@ -132,21 +137,22 @@ function Avisos() {
               </p>
 
               {/* BOTÃO */}
-              <button
+              <Link
+                to="/"
                 style={{
+                  display: "inline-block",
                   marginTop: "20px",
                   background: "#4caf50",
-                  border: "none",
                   color: "#fff",
                   padding: "12px 24px",
                   borderRadius: "10px",
-                  cursor: "pointer",
+                  textDecoration: "none",
                   fontWeight: "bold",
                   fontSize: "15px"
                 }}
               >
                 Saiba mais →
-              </button>
+              </Link>
             </div>
           </div>
         ))}
