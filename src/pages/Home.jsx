@@ -184,15 +184,18 @@ function Home() {
             promovendo momentos especiais e fortalecendo os laços entre moradores.
           </p>
 
-          <a href="/projeto-pascoa" style={{
-            display: "inline-block",
-            marginTop: "10px",
-            color: "#ff9800",
-            textDecoration: "none",
-            fontWeight: "bold"
-          }}>
+          <Link
+            to="/projetopascoa"
+            style={{
+                display: "inline-block",
+                marginTop: "10px",
+                color: "#ff9800",
+                textDecoration: "none",
+                fontWeight: "bold"
+            }}
+            >
             Saiba mais →
-          </a>
+            </Link>
         </div>
 
       </div>
