@@ -6,6 +6,7 @@ import ProjetoCrianca from "./pages/projetoCrianca";
 import Associacao from "./pages/Associacao";
 import Horta from "./pages/Horta";
 import Avisos from "./pages/Avisos";
+import Saude from "./pages/Saude";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route path="/associacao" element={<Associacao />} />
       <Route path="/horta" element={<Horta />} />
       <Route path="avisos" element={<Avisos />} />
+      <Route path="saude" element={<Saude />} />
     </Routes>
   );
   
