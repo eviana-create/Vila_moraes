@@ -136,15 +136,18 @@ function Home() {
             tornar essa iniciativa realidade.
           </p>
 
-          <a href="/projeto-crianca" style={{
-            display: "inline-block",
-            marginTop: "10px",
-            color: "#4caf50",
-            textDecoration: "none",
-            fontWeight: "bold"
-          }}>
+         <Link
+            to="/projeto-crianca"
+            style={{
+                display: "inline-block",
+                marginTop: "10px",
+                color: "#4caf50",
+                textDecoration: "none",
+                fontWeight: "bold"
+            }}
+            >
             Saiba mais →
-          </a>
+            </Link>
         </div>
 
       </div>
@@ -275,6 +278,91 @@ function Home() {
             </div>
         </div>
 
+                    {/* CARD MARMITA SOLIDÁRIA */}
+<div
+  style={{
+    display: "flex",
+    gap: "20px",
+    background: "#1f1f1f",
+    padding: "20px",
+    borderRadius: "18px",
+    marginTop: "30px",
+    alignItems: "center",
+    flexWrap: "wrap",
+    boxShadow: "0 4px 20px rgba(0,0,0,0.3)"
+  }}
+>
+
+  {/* IMAGEM */}
+  <img
+    src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop"
+    alt="Projeto Marmita Solidária"
+    style={{
+      width: "280px",
+      height: "220px",
+      objectFit: "cover",
+      borderRadius: "15px",
+      flexShrink: 0
+    }}
+  />
+
+  {/* TEXTO */}
+  <div style={{ flex: 1 }}>
+    <h2
+      style={{
+        color: "#ff9800",
+        fontSize: "30px",
+        marginBottom: "15px"
+      }}
+    >
+      🍛 Marmita Solidária
+    </h2>
+
+    <p
+      style={{
+        color: "#ccc",
+        lineHeight: "1.8",
+        fontSize: "16px"
+      }}
+    >
+      O projeto Marmita Solidária realiza a distribuição
+      de refeições para famílias e moradores em situação
+      de vulnerabilidade da comunidade Vila Moraes.
+    </p>
+
+    <br />
+
+    <p
+      style={{
+        color: "#ccc",
+        lineHeight: "1.8",
+        fontSize: "16px"
+      }}
+    >
+      A iniciativa reúne voluntários, moradores e parceiros
+      em uma corrente de solidariedade que leva alimento,
+      acolhimento e esperança para quem mais precisa.
+    </p>
+
+    {/* BOTÃO */}
+    <Link
+      to="/marmitas"
+      style={{
+        display: "inline-block",
+        marginTop: "20px",
+        background: "#ff9800",
+        color: "#fff",
+        padding: "14px 28px",
+        borderRadius: "10px",
+        textDecoration: "none",
+        fontWeight: "bold"
+      }}
+    >
+      Saiba mais →
+    </Link>
+  </div>
+</div>
+
         {/* AVISOS */}
         <section id="avisos" style={{ scrollMarginTop: "80px" }}>
             <Card>
@@ -302,65 +390,65 @@ function Home() {
                     }}
                 >
 
-                    {/* IMAGEM LOCAL */}
-                    <img
-                        src={sabespImg}
-                        alt="Projeto SABESP"
-                        style={{
-                            width: "100%",
-                            height: "220px",
-                            objectFit: "cover"
-                        }}
-                    />
+                {/* IMAGEM LOCAL */}
+                <img
+                    src={sabespImg}
+                    alt="Projeto SABESP"
+                    style={{
+                        width: "100%",
+                        height: "220px",
+                        objectFit: "cover"
+                    }}
+                />
 
-                    {/* TEXTO */}
-                    <div
+                {/* TEXTO */}
+                <div
+                    style={{
+                        padding: "20px",
+                        borderLeft: "5px solid #2196f3"
+                    }}
+                >
+
+                    <h3 style={{ marginBottom: "10px" }}>
+                        💧 Regularização de Água
+                    </h3>
+
+                    <p
                         style={{
-                            padding: "20px",
-                            borderLeft: "5px solid #2196f3"
+                            color: "#ccc",
+                            lineHeight: "1.7"
                         }}
                     >
+                        A SABESP está oferecendo oportunidade
+                        para regularização de débitos,
+                        instalação de caixas d’água e novos
+                        registros para moradores da comunidade.
+                    </p>
 
-                        <h3 style={{ marginBottom: "10px" }}>
-                            💧 Regularização de Água
-                        </h3>
-
-                        <p
-                            style={{
-                                color: "#ccc",
-                                lineHeight: "1.7"
-                            }}
-                        >
-                            A SABESP está oferecendo oportunidade
-                            para regularização de débitos,
-                            instalação de caixas d’água e novos
-                            registros para moradores da comunidade.
-                        </p>
-
-                        <Link
-                            to="/avisos"
-                            style={{
-                                display: "inline-block",
-                                marginTop: "15px",
-                                background: "#2196f3",
-                                color: "#fff",
-                                padding: "12px 22px",
-                                borderRadius: "10px",
-                                textDecoration: "none",
-                                fontWeight: "bold"
-                            }}
-                        >
-                            Saiba mais →
-                        </Link>
-                    </div>
+                    <Link
+                        to="/avisos"
+                        style={{
+                            display: "inline-block",
+                            marginTop: "15px",
+                            background: "#2196f3",
+                            color: "#fff",
+                            padding: "12px 22px",
+                            borderRadius: "10px",
+                            textDecoration: "none",
+                            fontWeight: "bold"
+                        }}
+                    >
+                        Saiba mais →
+                    </Link>
                 </div>
+            </div>
 
-                {/* LISTA */}
-                <ul>
-                    {avisos.map((aviso, i) => (
-                        <li key={i}>{aviso}</li>
-                    ))}
-                </ul>
+            {/* LISTA */}
+            <ul>
+                {avisos.map((aviso, i) => (
+                    <li key={i}>{aviso}</li>
+                ))}
+            </ul>
 
             </Card>
         </section>
