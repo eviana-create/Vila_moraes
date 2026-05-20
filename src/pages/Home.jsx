@@ -185,7 +185,7 @@ function Home() {
           </p>
 
           <Link
-            to="/projetopascoa"
+            to="/projeto-pascoa"
             style={{
                 display: "inline-block",
                 marginTop: "10px",
