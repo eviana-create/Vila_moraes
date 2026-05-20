@@ -544,7 +544,7 @@ function Home() {
                                 fontSize: "16px"
                             }}
                         >
-                            A comunidade Vila Moraes receberá uma importante
+                            A comunidade Vila Moraes receberá neste dia 26 de maio uma importante
                             ação social em parceria com profissionais da saúde
                             e apoio do SUS.
                         </p>

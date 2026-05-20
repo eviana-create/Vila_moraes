@@ -17,6 +17,7 @@ e força coletiva.`*/
 export const avisos = [
     "Reunião geral dia  ás  horas",
     "Sabesp está dando a oportunidade para você negociar suas dividas",
+    "Dia 26/05/2026 Ação Social de Profissionais da Saúde",
     "Novo Projeto de urbanização em andamento",
 ];
 
