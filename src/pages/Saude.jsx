@@ -38,7 +38,7 @@ function Saude() {
             lineHeight: "1.8"
           }}
         >
-          A comunidade Vila Moraes receberá uma importante
+          A comunidade Vila Moraes receberá neste dia 26 de maio uma importante
           ação social com participação de profissionais da saúde
           e apoio do SUS, promovendo atendimento, orientação
           e cuidado para os moradores.
