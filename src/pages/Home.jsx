@@ -620,7 +620,180 @@ function Home() {
                     Ajude a manter a página (Assista um Vídeo)
                 </button>
 
+                {/* COMÉRCIOS LOCAIS */}
+<div
+    style={{
+        background: "#1f1f1f",
+        marginTop: "50px",
+        padding: "35px",
+        borderRadius: "20px",
+        boxShadow: "0 4px 20px rgba(0,0,0,0.3)"
+    }}
+>
+
+    <h2
+        style={{
+            fontSize: "35px",
+            marginBottom: "15px",
+            color: "#ff9800",
+            textAlign: "center"
+        }}
+    >
+        🛍️ Comércio Local
+    </h2>
+
+    <p
+        style={{
+            textAlign: "center",
+            color: "#ccc",
+            maxWidth: "800px",
+            margin: "0 auto 40px auto",
+            lineHeight: "1.8"
+        }}
+    >
+        Conheça comerciantes, empreendedores e pequenos
+        negócios da comunidade Vila Moraes.
+        Apoiar o comércio local fortalece toda a comunidade.
+    </p>
+
+    {/* CARDS */}
+    <div
+        style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+            gap: "20px"
+        }}
+    >
+
+        {/* CARD */}
+        <div
+            style={{
+                background: "#121212",
+                borderRadius: "15px",
+                overflow: "hidden"
+            }}
+        >
+
+            <img
+                src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=1200&auto=format&fit=crop"
+                alt="Barbearia"
+                style={{
+                    width: "100%",
+                    height: "180px",
+                    objectFit: "cover"
+                }}
+            />
+
+            <div style={{ padding: "20px" }}>
+
+                <h3 style={{ color: "#4caf50" }}>
+                    💈 Barbearia Exemplo
+                </h3>
+
+                <p
+                    style={{
+                        color: "#ccc",
+                        lineHeight: "1.7",
+                        fontSize: "14px"
+                    }}
+                >
+                    Cortes modernos, barba e atendimento
+                    para moradores da comunidade.
+                </p>
+
+            </div>
+
+        </div>
+
+        {/* CARD */}
+        <div
+            style={{
+                background: "#121212",
+                borderRadius: "15px",
+                overflow: "hidden"
+            }}
+        >
+
+            <img
+                src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=1200&auto=format&fit=crop"
+                alt="Lanchonete"
+                style={{
+                    width: "100%",
+                    height: "180px",
+                    objectFit: "cover"
+                }}
+            />
+
+            <div style={{ padding: "20px" }}>
+
+                <h3 style={{ color: "#ff9800" }}>
+                    🍔 Lanches Exemplo
+                </h3>
+
+                <p
+                    style={{
+                        color: "#ccc",
+                        lineHeight: "1.7",
+                        fontSize: "14px"
+                    }}
+                >
+                    Lanches, porções e atendimento
+                    delivery na comunidade.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    {/* BOTÕES */}
+    <div
+        style={{
+            display: "flex",
+            gap: "20px",
+            justifyContent: "center",
+            flexWrap: "wrap",
+            marginTop: "35px"
+        }}
+    >
+
+        <Link
+            to="/comercios"
+            style={{
+                background: "#2196f3",
+                color: "#fff",
+                padding: "14px 28px",
+                borderRadius: "10px",
+                textDecoration: "none",
+                fontWeight: "bold"
+            }}
+        >
+            Ver Comércios →
+        </Link>
+
+        <a
+            href="https://wa.me/5511950968892"
+            target="_blank"
+            rel="noreferrer"
+            style={{
+                background: "#25d366",
+                color: "#fff",
+                padding: "14px 28px",
+                borderRadius: "10px",
+                textDecoration: "none",
+                fontWeight: "bold"
+            }}
+        >
+            Divulgue Seu Negócio →
+        </a>
+
+    </div>
+
+</div>
+
             </Container>
+            
 
             <Footer />
 
