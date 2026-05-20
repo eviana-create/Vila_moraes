@@ -3,6 +3,7 @@ import Card from "../components/Card";
 import Container from "../components/Container";
 import { historia, avisos } from "../data/conteudo";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 
 /* IMPORT DA IMAGEM */
 import sabespImg from "../assets/sabesp.png";
@@ -620,6 +621,8 @@ function Home() {
                 </button>
 
             </Container>
+
+            <Footer />
 
         </div>
     );
