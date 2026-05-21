@@ -792,6 +792,112 @@ function Home() {
 
 </div>
 
+{/* COIOTE BANHO E TOSA */}
+<div
+    style={{
+        background: "#121212",
+        borderRadius: "18px",
+        overflow: "hidden",
+        boxShadow: "0 4px 20px rgba(0,0,0,0.4)"
+    }}
+>
+
+    {/* IMAGEM */}
+    <img
+        src="https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=1200&auto=format&fit=crop"
+        alt="Coiote Banho e Tosa"
+        style={{
+            width: "100%",
+            height: "220px",
+            objectFit: "cover"
+        }}
+    />
+
+    {/* CONTEÚDO */}
+    <div style={{ padding: "25px" }}>
+
+        <span
+            style={{
+                background: "#4caf50",
+                color: "#fff",
+                padding: "6px 12px",
+                borderRadius: "20px",
+                fontSize: "12px",
+                fontWeight: "bold"
+            }}
+        >
+            Parceiro da Comunidade
+        </span>
+
+        <h2
+            style={{
+                marginTop: "20px",
+                color: "#ff9800"
+            }}
+        >
+            🐶 Coiote Banho e Tosa
+        </h2>
+
+        <p
+            style={{
+                color: "#ccc",
+                lineHeight: "1.8",
+                marginTop: "15px"
+            }}
+        >
+            Banho, tosa, hidratação, cuidado e carinho
+            para seu pet com atendimento especializado
+            na região.
+        </p>
+
+        {/* BOTÕES */}
+        <div
+            style={{
+                display: "flex",
+                gap: "15px",
+                marginTop: "25px",
+                flexWrap: "wrap"
+            }}
+        >
+
+            <a
+                href="https://eviana-create.github.io/coiote-banho-e-tosa/"
+                target="_blank"
+                rel="noreferrer"
+                style={{
+                    background: "#2196f3",
+                    color: "#fff",
+                    padding: "12px 22px",
+                    borderRadius: "10px",
+                    textDecoration: "none",
+                    fontWeight: "bold"
+                }}
+            >
+                Visitar Site →
+            </a>
+
+            <a
+                href="https://wa.me/5511950968892"
+                target="_blank"
+                rel="noreferrer"
+                style={{
+                    background: "#25d366",
+                    color: "#fff",
+                    padding: "12px 22px",
+                    borderRadius: "10px",
+                    textDecoration: "none",
+                    fontWeight: "bold"
+                }}
+            >
+                WhatsApp →
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
             </Container>
             
 
