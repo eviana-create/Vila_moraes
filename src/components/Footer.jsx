@@ -141,7 +141,7 @@ function Footer() {
                     </p>
 
                     <a
-                        href="https://wa.me/5511950968892"
+                        href="https://wa.me/5511956934179"
                         target="_blank"
                         rel="noreferrer"
                         style={{
