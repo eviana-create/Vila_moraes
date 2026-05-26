@@ -85,7 +85,7 @@ function Footer() {
                             Associação
                         </Link>
 
-                        <Link
+                      {/*}  <Link
                             to="/projeto-crianca"
                             style={{
                                 color: "#ccc",
@@ -94,6 +94,7 @@ function Footer() {
                         >
                             Projeto Criança
                         </Link>
+                        */}
 
                         <Link
                             to="/projetopascoa"
