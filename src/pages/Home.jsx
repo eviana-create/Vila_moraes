@@ -107,7 +107,7 @@ function Home() {
                     </Card>
                 </section>
 
-                {/* CARD PROJETO CRIANÇA */}
+                {/* CARD PROJETO CRIANÇA 
                 <div
                     style={{
                         display: "flex",
@@ -121,7 +121,7 @@ function Home() {
                     }}
                 >
 
-                    {/* IMAGEM */}
+                    
                     <img
                         src="https://via.placeholder.com/120x120"
                         alt="Projeto Criança por um Dia"
@@ -133,7 +133,7 @@ function Home() {
                         }}
                     />
 
-                    {/* TEXTO */}
+                    
                     <div style={{ flex: 1 }}>
 
                         <h3>🎁 Projeto Um Dia de Criança</h3>
@@ -170,6 +170,8 @@ function Home() {
 
                 </div>
 
+                */}
+                
                 {/* CARD PÁSCOA */}
                 <div
                     style={{
