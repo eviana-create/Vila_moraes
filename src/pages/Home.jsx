@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 
 /* IMPORT DA IMAGEM */
 import sabespImg from "../assets/sabesp.png";
+import foto9 from "../assets/marmitas/foto9.jpeg";
 
 function Home() {
     return (
@@ -332,16 +333,14 @@ function Home() {
 
                     {/* IMAGEM */}
                     <img
-                        src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop"
-                        alt="Projeto Marmita Solidária"
-                        style={{
-                            width: "280px",
-                            height: "220px",
-                            objectFit: "cover",
-                            borderRadius: "15px",
-                            flexShrink: 0
-                        }}
-                    />
+  src={foto9}
+  alt="Projeto Marmita Solidária"
+  style={{
+    width: "100%",
+    height: "100%",
+    objectFit: "cover"
+  }}
+/>
 
                     {/* TEXTO */}
                     <div style={{ flex: 1 }}>
