@@ -1,10 +1,10 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
-
 
 /* IMPORTS DAS FOTOS */
 import foto1 from "../assets/marmitas/foto1.jpeg";
@@ -20,6 +20,9 @@ import foto8 from "../assets/marmitas/foto8.jpeg";
 import videoMarmita from "../assets/marmitas/marmita-solidaria.mp4";
 
 function Marmitas() {
+
+  const [imagemAberta, setImagemAberta] = useState(null);
+
   return (
     <div
       style={{
@@ -248,132 +251,134 @@ function Marmitas() {
         </div>
 
         {/* GALERIA */}
-<section
-  style={{
-    marginBottom: "50px"
-  }}
->
-
-  <h2
-    style={{
-      fontSize: "35px",
-      marginBottom: "25px",
-      color: "#ff9800",
-      textAlign: "center"
-    }}
-  >
-    📸 Ações Solidárias do Projeto
-  </h2>
-
-  <Swiper
-    modules={[Autoplay, Pagination]}
-    spaceBetween={20}
-    slidesPerView={1}
-    pagination={{ clickable: true }}
-    autoplay={{
-      delay: 2500,
-      disableOnInteraction: false
-    }}
-    loop={true}
-    breakpoints={{
-      768: {
-        slidesPerView: 2
-      },
-      1024: {
-        slidesPerView: 3
-      }
-    }}
-  >
-
-    {[
-      foto1,
-      foto2,
-      foto3,
-      foto4,
-      foto5,
-      foto6,
-      foto7,
-      foto8
-    ].map((foto, index) => (
-
-      <SwiperSlide key={index}>
-
-        <div
+        <section
           style={{
-            overflow: "hidden",
-            borderRadius: "18px",
-            background: "#1f1f1f",
-            boxShadow: "0 4px 15px rgba(0,0,0,0.4)"
+            marginBottom: "50px"
           }}
         >
 
-          <img
-            src={foto}
-            alt={`Ação Solidária ${index + 1}`}
+          <h2
             style={{
-              width: "100%",
-              height: "350px",
-              objectFit: "cover"
+              fontSize: "35px",
+              marginBottom: "25px",
+              color: "#ff9800",
+              textAlign: "center"
             }}
-          />
+          >
+            📸 Ações Solidárias do Projeto
+          </h2>
 
-        </div>
+          <Swiper
+            modules={[Autoplay, Pagination]}
+            spaceBetween={20}
+            slidesPerView={1}
+            pagination={{ clickable: true }}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false
+            }}
+            loop={true}
+            breakpoints={{
+              768: {
+                slidesPerView: 2
+              },
+              1024: {
+                slidesPerView: 3
+              }
+            }}
+          >
 
-      </SwiperSlide>
+            {[
+              foto1,
+              foto2,
+              foto3,
+              foto4,
+              foto5,
+              foto6,
+              foto7,
+              foto8
+            ].map((foto, index) => (
 
-    ))}
+              <SwiperSlide key={index}>
 
-  </Swiper>
+                <div
+                  style={{
+                    overflow: "hidden",
+                    borderRadius: "18px",
+                    background: "#1f1f1f",
+                    boxShadow: "0 4px 15px rgba(0,0,0,0.4)"
+                  }}
+                >
 
-</section>
+                  <img
+                    src={foto}
+                    alt={`Ação Solidária ${index + 1}`}
+                    onClick={() => setImagemAberta(foto)}
+                    style={{
+                      width: "100%",
+                      height: "350px",
+                      objectFit: "cover",
+                      cursor: "pointer"
+                    }}
+                  />
+
+                </div>
+
+              </SwiperSlide>
+
+            ))}
+
+          </Swiper>
+
+        </section>
 
         {/* VÍDEO */}
-<section
-  style={{
-    marginBottom: "50px"
-  }}
->
+        <section
+          style={{
+            marginBottom: "50px"
+          }}
+        >
 
-  <h2
-    style={{
-      fontSize: "35px",
-      marginBottom: "25px",
-      color: "#ff9800",
-      textAlign: "center"
-    }}
-  >
-    🎥 Vídeo da Ação
-  </h2>
+          <h2
+            style={{
+              fontSize: "35px",
+              marginBottom: "25px",
+              color: "#ff9800",
+              textAlign: "center"
+            }}
+          >
+            🎥 Vídeo da Ação
+          </h2>
 
-  <div
-    style={{
-      background: "#1f1f1f",
-      padding: "20px",
-      borderRadius: "20px"
-    }}
-  >
+          <div
+            style={{
+              background: "#1f1f1f",
+              padding: "20px",
+              borderRadius: "20px"
+            }}
+          >
 
-    <video
-      controls
-      autoPlay={false}
-      width="100%"
-      preload="metadata"
-      style={{
-        borderRadius: "15px",
-        maxHeight: "700px",
-        objectFit: "cover"
-      }}
-    >
-      <source
-        src={videoMarmita}
-        type="video/mp4"
-      />
+            <video
+              controls
+              width="100%"
+              preload="metadata"
+              style={{
+                borderRadius: "15px",
+                maxHeight: "700px",
+                objectFit: "cover"
+              }}
+            >
+              <source
+                src={videoMarmita}
+                type="video/mp4"
+              />
 
-      Seu navegador não suporta vídeo.
-    </video>
+              Seu navegador não suporta vídeo.
+            </video>
 
-  </div>
-</section>
+          </div>
+
+        </section>
 
         {/* CONTADORES */}
         <div
@@ -498,6 +503,41 @@ function Marmitas() {
         </div>
 
       </div>
+
+      {/* MODAL FOTO */}
+      {imagemAberta && (
+
+        <div
+          onClick={() => setImagemAberta(null)}
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            background: "rgba(0,0,0,0.95)",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            zIndex: 9999,
+            padding: "20px"
+          }}
+        >
+
+          <img
+            src={imagemAberta}
+            alt="Imagem ampliada"
+            style={{
+              maxWidth: "95%",
+              maxHeight: "95%",
+              borderRadius: "15px"
+            }}
+          />
+
+        </div>
+
+      )}
+
     </div>
   );
 }
