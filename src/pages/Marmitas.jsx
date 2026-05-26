@@ -1,4 +1,9 @@
 import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/pagination";
 
 
 /* IMPORTS DAS FOTOS */
@@ -243,56 +248,84 @@ function Marmitas() {
         </div>
 
         {/* GALERIA */}
-        <section
+<section
+  style={{
+    marginBottom: "50px"
+  }}
+>
+
+  <h2
+    style={{
+      fontSize: "35px",
+      marginBottom: "25px",
+      color: "#ff9800",
+      textAlign: "center"
+    }}
+  >
+    📸 Ações Solidárias Reais
+  </h2>
+
+  <Swiper
+    modules={[Autoplay, Pagination]}
+    spaceBetween={20}
+    slidesPerView={1}
+    pagination={{ clickable: true }}
+    autoplay={{
+      delay: 2500,
+      disableOnInteraction: false
+    }}
+    loop={true}
+    breakpoints={{
+      768: {
+        slidesPerView: 2
+      },
+      1024: {
+        slidesPerView: 3
+      }
+    }}
+  >
+
+    {[
+      foto1,
+      foto2,
+      foto3,
+      foto4,
+      foto5,
+      foto6,
+      foto7,
+      foto8
+    ].map((foto, index) => (
+
+      <SwiperSlide key={index}>
+
+        <div
           style={{
-            marginBottom: "50px"
+            overflow: "hidden",
+            borderRadius: "18px",
+            background: "#1f1f1f",
+            boxShadow: "0 4px 15px rgba(0,0,0,0.4)"
           }}
         >
 
-          <h2
+          <img
+            src={foto}
+            alt={`Ação Solidária ${index + 1}`}
             style={{
-              fontSize: "35px",
-              marginBottom: "25px",
-              color: "#ff9800",
-              textAlign: "center"
+              width: "100%",
+              height: "350px",
+              objectFit: "cover"
             }}
-          >
-            📸 Ações Solidárias do Projeto
-          </h2>
+          />
 
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-              gap: "20px"
-            }}
-          >
+        </div>
 
-            {[foto1, foto2, foto3, foto4, foto5, foto6, foto7, foto8].map((foto, index) => (
-              <div
-                key={index}
-                style={{
-                  overflow: "hidden",
-                  borderRadius: "18px",
-                  background: "#1f1f1f",
-                  boxShadow: "0 4px 15px rgba(0,0,0,0.4)"
-                }}
-              >
-                <img
-                  src={foto}
-                  alt={`Ação Solidária ${index + 1}`}
-                  style={{
-                    width: "100%",
-                    height: "280px",
-                    objectFit: "cover",
-                    transition: "0.4s"
-                  }}
-                />
-              </div>
-            ))}
+      </SwiperSlide>
 
-          </div>
-        </section>
+    ))}
+
+  </Swiper>
+
+</section>
 
         {/* VÍDEO */}
 <section
