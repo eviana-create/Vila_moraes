@@ -1,5 +1,19 @@
 import { Link } from "react-router-dom";
 
+
+/* IMPORTS DAS FOTOS */
+import foto1 from "../assets/marmitas/foto1.jpeg";
+import foto2 from "../assets/marmitas/foto2.jpeg";
+import foto3 from "../assets/marmitas/foto3.jpeg";
+import foto4 from "../assets/marmitas/foto4.jpeg";
+import foto5 from "../assets/marmitas/foto5.jpeg";
+import foto6 from "../assets/marmitas/foto6.jpeg";
+import foto7 from "../assets/marmitas/foto7.jpeg";
+import foto8 from "../assets/marmitas/foto8.jpeg";
+
+/* IMPORT DO VIDEO */
+import videoMarmita from "../assets/marmitas/marmita-solidaria.mp4";
+
 function Marmitas() {
   return (
     <div
@@ -23,13 +37,13 @@ function Marmitas() {
 
         {/* IMAGEM */}
         <img
-          src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1600&auto=format&fit=crop"
+          src={foto1}
           alt="Projeto Marmita Solidária"
           style={{
             width: "100%",
             height: "100%",
             objectFit: "cover",
-            filter: "brightness(0.5)"
+            filter: "brightness(0.45)"
           }}
         />
 
@@ -231,7 +245,7 @@ function Marmitas() {
         {/* GALERIA */}
         <section
           style={{
-            marginBottom: "40px"
+            marginBottom: "50px"
           }}
         >
 
@@ -243,52 +257,90 @@ function Marmitas() {
               textAlign: "center"
             }}
           >
-            📸 Ações Solidárias
+            📸 Ações Solidárias do Projeto
           </h2>
 
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
               gap: "20px"
             }}
           >
 
-            <img
-              src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop"
-              alt=""
-              style={{
-                width: "100%",
-                height: "250px",
-                objectFit: "cover",
-                borderRadius: "15px"
-              }}
-            />
-
-            <img
-              src="https://images.unsplash.com/photo-1547592180-85f173990554?q=80&w=1200&auto=format&fit=crop"
-              alt=""
-              style={{
-                width: "100%",
-                height: "250px",
-                objectFit: "cover",
-                borderRadius: "15px"
-              }}
-            />
-
-            <img
-              src="https://images.unsplash.com/photo-1520201163981-8cc95007dd2e?q=80&w=1200&auto=format&fit=crop"
-              alt=""
-              style={{
-                width: "100%",
-                height: "250px",
-                objectFit: "cover",
-                borderRadius: "15px"
-              }}
-            />
+            {[foto1, foto2, foto3, foto4, foto5, foto6, foto7, foto8].map((foto, index) => (
+              <div
+                key={index}
+                style={{
+                  overflow: "hidden",
+                  borderRadius: "18px",
+                  background: "#1f1f1f",
+                  boxShadow: "0 4px 15px rgba(0,0,0,0.4)"
+                }}
+              >
+                <img
+                  src={foto}
+                  alt={`Ação Solidária ${index + 1}`}
+                  style={{
+                    width: "100%",
+                    height: "280px",
+                    objectFit: "cover",
+                    transition: "0.4s"
+                  }}
+                />
+              </div>
+            ))}
 
           </div>
         </section>
+
+        {/* VÍDEO */}
+<section
+  style={{
+    marginBottom: "50px"
+  }}
+>
+
+  <h2
+    style={{
+      fontSize: "35px",
+      marginBottom: "25px",
+      color: "#ff9800",
+      textAlign: "center"
+    }}
+  >
+    🎥 Vídeo da Ação
+  </h2>
+
+  <div
+    style={{
+      background: "#1f1f1f",
+      padding: "20px",
+      borderRadius: "20px"
+    }}
+  >
+
+    <video
+      controls
+      autoPlay={false}
+      width="100%"
+      preload="metadata"
+      style={{
+        borderRadius: "15px",
+        maxHeight: "700px",
+        objectFit: "cover"
+      }}
+    >
+      <source
+        src={videoMarmita}
+        type="video/mp4"
+      />
+
+      Seu navegador não suporta vídeo.
+    </video>
+
+  </div>
+</section>
 
         {/* CONTADORES */}
         <div
@@ -379,7 +431,7 @@ function Marmitas() {
         >
 
           <a
-            href="https://wa.me/5511950968892"
+            href="https://wa.me/5511953013378"
             target="_blank"
             rel="noreferrer"
             style={{
