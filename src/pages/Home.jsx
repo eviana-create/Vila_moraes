@@ -879,7 +879,7 @@ function Home() {
             </a>
 
             <a
-                href="https://wa.me/5511950968892"
+                href="https://wa.me/5511933681843"
                 target="_blank"
                 rel="noreferrer"
                 style={{
