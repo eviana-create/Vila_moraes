@@ -262,7 +262,7 @@ function Marmitas() {
       textAlign: "center"
     }}
   >
-    📸 Ações Solidárias Reais
+    📸 Ações Solidárias do Projeto
   </h2>
 
   <Swiper
