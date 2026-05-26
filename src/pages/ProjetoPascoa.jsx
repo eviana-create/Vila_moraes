@@ -369,7 +369,7 @@ function ProjetoPascoa() {
         </div>
 
         {/* BOTÕES */}
-        <div
+        {/*<div
           style={{
             display: "flex",
             gap: "20px",
@@ -408,9 +408,9 @@ function ProjetoPascoa() {
             }}
           >
             Voltar →
-          </Link>
+          </Link> 
 
-        </div>
+        </div> */}
 
       </div>
     </div>
