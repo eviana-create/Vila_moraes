@@ -22,14 +22,14 @@ function Avisos() {
         "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop"
     },
 
-    {/*
+    {/*{
       titulo: "❤️ Ação Social",
       data: "Em Breve",
       descricao:
         "Ajude o Projeto Criança por um Dia com doações de brinquedos, roupas, emprestimo de brinquedos recreativos ou voluntariado.",
       imagem:
         "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=1200&auto=format&fit=crop"
-    */},
+    },*/}
 
     {
       titulo: "🌱 Horta Comunitária",
