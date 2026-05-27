@@ -286,9 +286,9 @@ function Horta() {
 
               {
                 foto: foto3,
-                usuario: "Escola Parceira",
+                usuario: "Empresa Parceira",
                 texto:
-                  "Alunos aprendendo sobre sustentabilidade 🌎",
+                  "Profissionais ensinando sobre sustentabilidade 🌎",
                 likes: 89,
                 comentarios: 12
               },
