@@ -137,7 +137,7 @@ function Avisos() {
               </p>
 
               {/* BOTÃO */}
-              <Link
+              {/*<Link
                 to="/"
                 style={{
                   display: "inline-block",
@@ -152,7 +152,7 @@ function Avisos() {
                 }}
               >
                 Saiba mais →
-              </Link>
+              </Link>*/}
             </div>
           </div>
         ))}
