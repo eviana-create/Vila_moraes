@@ -5,6 +5,18 @@ import sabespImg from "../assets/sabesp.png";
 
 function Avisos() {
   const avisos = [
+    
+    {
+    titulo: "🛍️ Feirinha Solidária da Comunidade",
+    data: "Sábado • Dia 30 • 09:00",
+    descricao:
+      "Grande feirinha solidária para aproximadamente 300 famílias da comunidade. Serão distribuídas senhas e a entrada será organizada de 10 em 10 pessoas. Importante trazer sacolas para transporte dos itens.",
+    imagem:
+      "https://images.unsplash.com/photo-1488459716781-31db52582fe9?q=80&w=1200&auto=format&fit=crop",
+    link: "/feirinha"
+  },
+
+    
     {
       titulo: "💧 Regularização de Água",
       data: "Urgente",

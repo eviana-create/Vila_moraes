@@ -434,38 +434,39 @@ function Home() {
 
                             {/* IMAGEM */}
                             <img
-                                src={sabespImg}
-                                alt="Projeto SABESP"
-                                style={{
-                                    width: "100%",
-                                    height: "220px",
-                                    objectFit: "cover"
-                                }}
-                            />
+    src="https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1200&auto=format&fit=crop"
+    alt="Feirinha Solidária"
+    style={{
+        width: "100%",
+        height: "220px",
+        objectFit: "cover"
+    }}
+/>
 
-                            {/* TEXTO */}
-                            <div
-                                style={{
-                                    padding: "20px",
-                                    borderLeft: "5px solid #2196f3"
-                                }}
-                            >
+{/* TEXTO */}
+<div
+    style={{
+        padding: "20px",
+        borderLeft: "5px solid #4caf50"
+    }}
+>
 
-                                <h3 style={{ marginBottom: "10px" }}>
-                                    💧 Regularização de Água
-                                </h3>
+    <h3 style={{ marginBottom: "10px" }}>
+        🛍️ Feirinha Solidária da Comunidade
+    </h3>
 
-                                <p
-                                    style={{
-                                        color: "#ccc",
-                                        lineHeight: "1.7"
-                                    }}
-                                >
-                                    A SABESP está oferecendo oportunidade
-                                    para regularização de débitos,
-                                    instalação de caixas d’água e novos
-                                    registros para moradores da comunidade.
-                                </p>
+    <p
+        style={{
+            color: "#ccc",
+            lineHeight: "1.7"
+        }}
+    >
+        Feirinha na comunidade sábado dia 30/06/2026,
+        a partir das 09:00. Serão entregues senhas
+        para aproximadamente 300 famílias e a entrada
+        acontecerá de 10 em 10 pessoas.
+        Não esqueça de trazer sua sacola.
+    </p>
 
                                 <Link
                                     to="/avisos"
