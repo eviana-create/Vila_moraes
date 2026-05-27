@@ -529,6 +529,7 @@ function Horta() {
           }}
         >
 
+          {/*}
           <a
             href="https://wa.me/5511950968892"
             target="_blank"
@@ -560,7 +561,7 @@ function Horta() {
           >
             Voltar →
           </Link>
-
+            */}
         </div>
 
       </div>
