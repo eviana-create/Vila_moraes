@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
 
-import "swiper/css";
-import "swiper/css/pagination";
+import HortaInteracoes from "../components/HortaInteracoes";
+import LikeButton from "../components/LikeButton";
 
 /* FOTOS */
 import foto1 from "../assets/horta/foto1.jpeg";
@@ -241,213 +239,201 @@ function Horta() {
 
         </div>
 
-        {/* GALERIA */}
         {/* FEED COMUNITÁRIO */}
-<section
-  style={{
-    marginBottom: "60px"
-  }}
->
-
-  <h2
-    style={{
-      fontSize: "35px",
-      marginBottom: "30px",
-      color: "#4caf50",
-      textAlign: "center"
-    }}
-  >
-    🌱 Feed da Comunidade
-  </h2>
-
-  <div
-    style={{
-      display: "grid",
-      gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
-      gap: "25px"
-    }}
-  >
-
-    {[
-      {
-        foto: foto1,
-        usuario: "Projeto Horta",
-        texto:
-          "União da comunidade em mais uma ação especial 🌿",
-        likes: 124,
-        comentarios: 18
-      },
-
-      {
-        foto: foto2,
-        usuario: "Voluntários",
-        texto:
-          "Colheita realizada com sucesso 🥬❤️",
-        likes: 210,
-        comentarios: 34
-      },
-
-      {
-        foto: foto3,
-        usuario: "Escola Parceira",
-        texto:
-          "Alunos aprendendo sobre sustentabilidade 🌎",
-        likes: 89,
-        comentarios: 12
-      },
-
-      {
-        foto: foto4,
-        usuario: "Comunidade",
-        texto:
-          "Plantando esperança para o futuro 🌱",
-        likes: 167,
-        comentarios: 21
-      },
-
-      {
-        foto: foto5,
-        usuario: "Horta Solidária",
-        texto:
-          "Mais um dia incrível de trabalho coletivo 🤝",
-        likes: 301,
-        comentarios: 45
-      }
-
-    ].map((post, index) => (
-
-      <div
-        key={index}
-        style={{
-          background: "#1f1f1f",
-          borderRadius: "20px",
-          overflow: "hidden",
-          boxShadow: "0 4px 20px rgba(0,0,0,0.4)"
-        }}
-      >
-
-        {/* TOPO */}
-        <div
+        <section
           style={{
-            padding: "15px",
-            display: "flex",
-            alignItems: "center",
-            gap: "12px"
+            marginBottom: "60px"
           }}
         >
 
+          <h2
+            style={{
+              fontSize: "35px",
+              marginBottom: "30px",
+              color: "#4caf50",
+              textAlign: "center"
+            }}
+          >
+            🌱 Feed da Horta
+          </h2>
+
           <div
             style={{
-              width: "45px",
-              height: "45px",
-              borderRadius: "50%",
-              background: "#4caf50",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontWeight: "bold"
-            }}
-          >
-            🌱
-          </div>
-
-          <div>
-
-            <h3
-              style={{
-                margin: 0,
-                fontSize: "17px"
-              }}
-            >
-              {post.usuario}
-            </h3>
-
-            <span
-              style={{
-                color: "#aaa",
-                fontSize: "14px"
-              }}
-            >
-              Vila Moraes
-            </span>
-
-          </div>
-
-        </div>
-
-        {/* FOTO */}
-        <img
-          src={post.foto}
-          alt="Postagem"
-          style={{
-            width: "100%",
-            height: "320px",
-            objectFit: "cover"
-          }}
-        />
-
-        {/* TEXTO */}
-        <div
-          style={{
-            padding: "18px"
-          }}
-        >
-
-          <p
-            style={{
-              color: "#ddd",
-              lineHeight: "1.7"
-            }}
-          >
-            {post.texto}
-          </p>
-
-          {/* AÇÕES */}
-          <div
-            style={{
-              display: "flex",
-              gap: "20px",
-              marginTop: "15px",
-              color: "#bbb",
-              fontSize: "15px"
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+              gap: "25px"
             }}
           >
 
-            <span
-              style={{
-                cursor: "pointer"
-              }}
-            >
-              ❤️ {post.likes}
-            </span>
+            {[
+              {
+                foto: foto1,
+                usuario: "Projeto Horta",
+                texto:
+                  "União da comunidade em mais uma ação especial 🌿",
+                likes: 124,
+                comentarios: 18
+              },
 
-            <span
-              style={{
-                cursor: "pointer"
-              }}
-            >
-              💬 {post.comentarios}
-            </span>
+              {
+                foto: foto2,
+                usuario: "Voluntários",
+                texto:
+                  "Colheita realizada com sucesso 🥬❤️",
+                likes: 210,
+                comentarios: 34
+              },
 
-            <span
-              style={{
-                cursor: "pointer"
-              }}
-            >
-              📤 Compartilhar
-            </span>
+              {
+                foto: foto3,
+                usuario: "Escola Parceira",
+                texto:
+                  "Alunos aprendendo sobre sustentabilidade 🌎",
+                likes: 89,
+                comentarios: 12
+              },
+
+              {
+                foto: foto4,
+                usuario: "Comunidade",
+                texto:
+                  "Plantando esperança para o futuro 🌱",
+                likes: 167,
+                comentarios: 21
+              },
+
+              {
+                foto: foto5,
+                usuario: "Horta Solidária",
+                texto:
+                  "Mais um dia incrível de trabalho coletivo 🤝",
+                likes: 301,
+                comentarios: 45
+              }
+
+            ].map((post, index) => (
+
+              <div
+                key={index}
+                style={{
+                  background: "#1f1f1f",
+                  borderRadius: "20px",
+                  overflow: "hidden",
+                  boxShadow: "0 4px 20px rgba(0,0,0,0.4)"
+                }}
+              >
+
+                {/* TOPO */}
+                <div
+                  style={{
+                    padding: "15px",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "12px"
+                  }}
+                >
+
+                  <div
+                    style={{
+                      width: "45px",
+                      height: "45px",
+                      borderRadius: "50%",
+                      background: "#4caf50",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      fontWeight: "bold"
+                    }}
+                  >
+                    🌱
+                  </div>
+
+                  <div>
+
+                    <h3
+                      style={{
+                        margin: 0,
+                        fontSize: "17px"
+                      }}
+                    >
+                      {post.usuario}
+                    </h3>
+
+                    <span
+                      style={{
+                        color: "#aaa",
+                        fontSize: "14px"
+                      }}
+                    >
+                      Vila Moraes
+                    </span>
+
+                  </div>
+
+                </div>
+
+                {/* FOTO */}
+                <img
+                  src={post.foto}
+                  alt="Postagem"
+                  style={{
+                    width: "100%",
+                    height: "320px",
+                    objectFit: "cover"
+                  }}
+                />
+
+                {/* TEXTO */}
+                <div
+                  style={{
+                    padding: "18px"
+                  }}
+                >
+
+                  <p
+                    style={{
+                      color: "#ddd",
+                      lineHeight: "1.7"
+                    }}
+                  >
+                    {post.texto}
+                  </p>
+
+                  {/* AÇÕES */}
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: "20px",
+                      marginTop: "15px",
+                      color: "#bbb",
+                      fontSize: "15px"
+                    }}
+                  >
+
+                    <LikeButton postId={`post-${index}`} />
+
+                    <span
+                      style={{
+                        cursor: "pointer"
+                      }}
+                    >
+                      📤 Compartilhar
+                    </span>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            ))}
 
           </div>
 
-        </div>
+        </section>
 
-      </div>
-
-    ))}
-
-  </div>
-
-</section>
+        {/* INTERAÇÕES FIREBASE */}
+        <HortaInteracoes />
 
         {/* NÚMEROS */}
         <div
