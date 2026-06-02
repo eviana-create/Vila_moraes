@@ -10,6 +10,7 @@ import Saude from "./pages/Saude";
 import ProjetoPascoa from "./pages/ProjetoPascoa";
 import Marmitas from "./pages/Marmitas";
 import Feirinha from "./pages/Feirinha";
+import Emilly from "./pages/Emilly";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Route path="/projetopascoa" element={<ProjetoPascoa />} />
       <Route path="/marmitas" element={<Marmitas />} />
       <Route path="/feirinha" element={<Feirinha />} />
+      <Route path="/emilly" element={<Emilly />} />
     </Routes>
   );
 }

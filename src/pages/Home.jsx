@@ -35,6 +35,66 @@ function Home() {
                     Comunidade Vila Moraes
                 </h1>
 
+                 {/* CAMPANHA EMILLY */}
+<div
+  style={{
+    background:
+      "linear-gradient(135deg,#e91e63,#ad1457)",
+    padding: "30px",
+    borderRadius: "20px",
+    marginBottom: "30px",
+    textAlign: "center",
+    boxShadow: "0 4px 20px rgba(0,0,0,0.4)"
+  }}
+>
+
+  <h2
+    style={{
+      color: "#fff",
+      marginBottom: "15px",
+      fontSize: "30px"
+    }}
+  >
+    ❤️ Ajude a Emilly
+  </h2>
+
+  <p
+    style={{
+      color: "#fff",
+      maxWidth: "800px",
+      margin: "0 auto",
+      lineHeight: "1.8"
+    }}
+  >
+    Emilly Victoria Araújo Viana nasceu com
+    pé torto congênito e enfrenta uma longa
+    jornada em busca de mais qualidade de vida.
+
+    Hoje ela precisa de uma cirurgia corretiva
+    que poderá transformar seu futuro.
+
+    Conheça sua história e descubra como ajudar.
+  </p>
+
+  <Link
+    to="/emilly"
+    style={{
+      display: "inline-block",
+      marginTop: "25px",
+      background: "#fff",
+      color: "#e91e63",
+      padding: "15px 35px",
+      borderRadius: "12px",
+      textDecoration: "none",
+      fontWeight: "bold",
+      fontSize: "18px"
+    }}
+  >
+    Conhecer a História ❤️
+  </Link>
+
+</div>
+
                 {/* HISTÓRIA */}
                 <section
                     id="historia"
