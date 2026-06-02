@@ -169,7 +169,7 @@ function Emilly() {
   </p>
 
   <p>
-    Ela contou e continua contando com o apoio de sua avó, de seus avôs Tadeu e Heleno, de sua mãe e também de seu pai, Emerson, que segue firme na luta por uma vida melhor para sua filha.
+    Ela contou e continua contando com o apoio de sua avó, de seus avôs Tadeu e Heleno, de sua tia Aline, sua prima Sthefany, seus irmãos Thoma e brenda, de sua mãe e também de seu pai, Emerson, que segue firme na luta por uma vida melhor para sua filha.
   </p>
 
   <p>
