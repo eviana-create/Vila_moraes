@@ -461,28 +461,28 @@ function Home() {
             lineHeight: "1.7"
         }}
     >
-        Feirinha na comunidade sábado dia 30/06/2026,
+        Feirinha na comunidade sábado dia 30/05/2026,
         a partir das 09:00. Serão entregues senhas
         para aproximadamente 300 famílias e a entrada
         acontecerá de 10 em 10 pessoas.
         Não esqueça de trazer sua sacola.
     </p>
 
-                                <Link
-                                    to="/avisos"
-                                    style={{
-                                        display: "inline-block",
-                                        marginTop: "15px",
-                                        background: "#2196f3",
-                                        color: "#fff",
-                                        padding: "12px 22px",
-                                        borderRadius: "10px",
-                                        textDecoration: "none",
-                                        fontWeight: "bold"
-                                    }}
-                                >
-                                    Saiba mais →
-                                </Link>
+            <Link
+                to="/feirinha"
+                style={{
+                    display: "inline-block",
+                    marginTop: "15px",
+                    background: "#2196f3",
+                    color: "#fff",
+                    padding: "12px 22px",
+                    borderRadius: "10px",
+                    textDecoration: "none",
+                    fontWeight: "bold"
+                }}
+                >
+                Ver Galeria →
+            </Link>
 
                             </div>
 
