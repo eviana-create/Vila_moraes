@@ -1,9 +1,7 @@
-import Navbar from "../components/Navbar";
 import Card from "../components/Card";
 import Container from "../components/Container";
 import { historia, avisos } from "../data/conteudo";
 import { Link } from "react-router-dom";
-import Footer from "../components/Footer";
 
 /* IMPORT DA IMAGEM */
 import sabespImg from "../assets/sabesp.png";
@@ -21,8 +19,7 @@ function Home() {
             }}
         >
 
-            <Navbar />
-
+            
             <Container>
 
                 <h1
@@ -36,6 +33,8 @@ function Home() {
                 </h1>
 
                  {/* CAMPANHA EMILLY */}
+
+{/*
 <div
   style={{
     background:
@@ -94,6 +93,7 @@ function Home() {
   </Link>
 
 </div>
+*/}
 
                 {/* HISTÓRIA */}
                 <section
@@ -962,8 +962,6 @@ function Home() {
 
             </Container>
             
-
-            <Footer />
 
         </div>
     );
